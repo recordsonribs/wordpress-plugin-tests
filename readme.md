@@ -19,7 +19,7 @@ Assumptions
 How to integrate with your plugin
 ----------------------------------
 1. Place [`.travis.yml`](https://github.com/benbalter/wordpress-plugin-tests/blob/master/.travis.yml) file in your plugin's root folder (you may want to [customize your build settings](http://about.travis-ci.org/docs/user/build-configuration/) here)
-2. Create a subfolder of your plugin called `tests/` and copy over the [`bootstrap.php`](https://github.com/benbalter/wordpress-plugin-tests/blob/master/tests/bootstrap.php) and [`phpunit.xml`](https://github.com/benbalter/wordpress-plugin-tests/blob/master/tests/phpunit.xml) files from this repo's [`test/`](https://github.com/benbalter/wordpress-plugin-tests/tree/master/tests) folder
+2. Create a subfolder of your plugin called `tests/` and copy over the [`bootstrap.php`](https://github.com/recordsonribs/wordpress-plugin-tests/blob/master/tests/bootstrap.php) from the `tests` directory and [`phpunit.xml`](https://github.com/recordsonribs/wordpress-plugin-tests/blob/master/phpunit.xml) files from this repo's root directory.
 3. Customize the newly coppied [`/tests/bootstrap.php`](https://github.com/benbalter/wordpress-plugin-tests/blob/master/tests/bootstrap.php) with the path to your plugin file 
 4. Set up the tests library as a [submodule](http://git-scm.com/book/en/Git-Tools-Submodules): `git submodule add git://github.com/scribu/wp-tests-lib.git tests/lib`
 5. [Activate Travis CI](http://travis-ci.org/profile) for your plugin
@@ -38,13 +38,13 @@ phpunit
 
 The Tests
 ---------
-* Each test file should live in the `tests/` folder and should be named in the format of `test_{name_of_test}.php`.
+* Each test file should live in the `tests/` folder and should be named in the format of `test-{name_of_test}.php`.
 * Each test file should contain a single class named in the form of `WP_Test_{name_of_test}` that extends `WP_UnitTestCase`. 
 * Example Tests: [WP Document Revisions](https://github.com/benbalter/WP-Document-Revisions/tree/master/tests)
 
 Note
 ----
-There's a separate branch [`setup`](https://github.com/benbalter/wordpress-plugin-tests/tree/setup) which contains setup and config files which are pulled down on the fly when testing.
+There's a separate branch [`setup`](https://github.com/recordsonribs/wordpress-plugin-tests/tree/setup) which contains setup and config files which are pulled down on the fly when testing.
 
 How to Contribute
 -----------------
