@@ -3,7 +3,7 @@ WordPress Plugin Tests
 
 A Travis CI compatible unit testing architecture for WordPress plugins that use [WordPress core's official unit-testing framework](http://unit-tests.trac.wordpress.org/browser/trunk/includes) and [PHPUnit](https://github.com/sebastianbergmann/phpunit/)
 
-[![Build Status](https://secure.travis-ci.org/benbalter/wordpress-plugin-tests.png)](http://travis-ci.org/benbalter/wordpress-plugin-tests)
+[![Build Status](https://api.travis-ci.org/recordsonribs/wordpress-plugin-tests.png)](http://travis-ci.org/recordsonribs/wordpress-plugin-tests)
 
 How it Works
 ------------
